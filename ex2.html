@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        div.mark {
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="text-justify">
+            The standard Lorem Ipsum passage, used since the 1500s
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum."
+        </p>
+        <p class="text-left">Text align left</p>
+        <p class="text-right">Text align right</p>
+        <p class="text-center">Text align center</p>
+        <!--Alignation by size-->
+        <!--If rule satisfied for some large category then that automatically satisfy for 
+        all small categories.
+        like when size>1200px means xl
+        so all are aligned right
+        as size<1200px but size > 992 px means lg
+        so only xl line is aligned left(as rule not applied), remaining all to right
+        as size < 992px and > 768px means md
+        so lg and xl align left and remaining all at right
+        as size < 768 and >575 px
+        xl, lg, md are left aligned, only sm is right aligned
+        as size < 576 px
+        it is extra small and for it all are left aligned
+        -->
+        <p class="text-sm-right">Right aligned on smaller</p>
+        <p class="text-md-right">Right aligned on medium</p>
+        <p class="text-lg-right">Right aligned on large</p>
+        <p class="text-xl-right">Right aligned on extra large</p>
+
+        <p class="text-sm-left">Left aligned on smaller</p>
+        <p class="text-md-left">Left aligned on medium</p>
+        <p class="text-lg-left">Left aligned on large</p>
+        <p class="text-xl-left">Left aligned on extra large</p>
+
+        <p class="text-sm-center">Center aligned on smaller</p>
+        <p class="text-md-center">Center aligned on medium</p>
+        <p class="text-lg-center">Center aligned on large</p>
+        <p class="text-xl-center">Center aligned on extra large</p>
+
+        <!--Vertical Alignment-->
+        <div class="mark align-baseline">BASELINE</div>
+        <div class="mark align-top">top</div>
+        <div class="mark align-middle">middle</div>
+        <div class="mark align-bottom">bottom</div>
+        <div class="mark align-text-top">top-text</div>
+        <div class="mark align-text-bottom">bottom-text</div>
+
+        <!--Make inline element block level element-->
+        <h1 class="bg-success d-inline">Hello</h1>
+        <h1 class="bg-success d-inline">Goodbye</h1>
+
+        <!--Make block element inline element-->
+        <span class="bg-primary d-block">Turned to Block Level Element</span>
+
+        <!--Make block element inline block element-->
+        <div class="bg-warning d-inline-block">
+            <h1>Hello</h1>
+            This in inline 1
+        </div>
+        <div class="bg-warning d-inline-block">
+            <h1>Hello</h1>
+            This in inline 2
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
