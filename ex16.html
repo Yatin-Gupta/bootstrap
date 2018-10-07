@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Responsive Grids -->
+        <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+                <ul>
+                    <li>6 column on small screen</li> <!-- #1 -->
+                    <li>8 column on medium screen</li>
+                    <li>9 column on large screen</li>
+                    <li>10 column on xlarge screen</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+                <ul>
+                    <li>6 column on small screen</li> <!-- #2 -->
+                    <!-- Note #1+#2=12 -->
+                    <li>4 column on medium screen</li>
+                    <li>3 column on large screen</li>
+                    <li>2 column on xlarge screen</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Row with equal width columns -->
+        <div class="row">
+            <div class="col border border-dark">Equal Width</div>
+            <div class="col border border-dark">Equal Width</div>
+            <div class="col border border-dark">Equal Width</div>
+            <div class="col border border-dark">Equal Width</div>
+        </div>
+        <!-- Equal width with multiple row -->
+        <div class="row">
+            <div class="col border border-dark">Equal Multi Width</div>
+            <div class="col border border-dark">Equal Multi Width</div>
+            <!--It have impact of new row-->
+            <div class="w-100"></div>
+            <div class="col border border-dark">Equal Multi Width</div>
+            <div class="col border border-dark">Equal Multi Width</div>
+        </div>
+        <!-- Auto Layout -->
+        <div class="row">
+            <!-- Take width automatically of 2 i.e 12-6-4=2 -->
+            <div class="col border border-dark">Auto Layout</div>
+            <div class="col-6 border border-dark">Auto Layout</div>
+            <div class="col-4 border border-dark">Auto Layout</div>
+        </div>
+        <!-- Equal Width Stacked -->
+        <div class="row">
+            <!-- Now if screen size smaller than xl then automatically columns stack over each other -->
+            <div class="col-xl" style="border:1px solid #333">Equal Width Stack</div>
+            <div class="col-xl" style="border:1px solid #333">Equal Width Stack</div>
+            <div class="col-xl" style="border:1px solid #333">Equal Width Stack</div>
+        </div>
+        <!-- Ordering -->
+        <div class="row">
+            <div class="col order-3" style="border:1px solid #333">First</div>
+            <div class="col order-2" style="border:1px solid #333">Second</div>
+            <div class="col order-1" style="border:1px solid #333">Third</div>
+        </div>
+        <!-- Offsetting -->
+        <div class="row">
+            <div class="col-md-6 border border-dark offset-md-3">Column of 6 offset by 3 column</div>
+        </div>
+        <!-- Another offsetting example -->
+        <div class="row">
+            <div class="col-md-3 border border-dark offset-md-3">Column of 3(I)</div>
+            <div class="col-md-3 border border-dark">Column of 3(II)</div>
+        </div>
+        <!-- Grid Nesting -->
+        <div class="row">
+            <div class="col-sm-9 border border-primary">
+                Level 1
+                <div class="row">
+                    <div class="col-sm-8 border border-dark">Level 2</div>
+                    <div class="col-sm-4 border border-dark">Level 3</div>
+                </div>
+            </div>
+            <div class="col-sm-3 border border-primary"></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

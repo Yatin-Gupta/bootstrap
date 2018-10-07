@@ -14,7 +14,79 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!--Basic Input groups-->
+    <!--prepend-->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <!-- Append -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username">
+        <div class="input-group-append">
+            <span class="input-group-text">@gmail.com</span>
+        </div>
+    </div>
+    <!--URL-->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">
+                http://IP/path/to/
+            </span>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+    <!-- Money -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+        </div>
+        <input type="text" />
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" />
+            </div>
+        </div>
+        <input type="text" class="form-control" />
+    </div>
+
+    <!-- Radio -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="radio" />
+            </div>
+        </div>
+        <input type="text" class="form-control" />
+    </div>
+
+    <!-- Multiple Input fields -->
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">
+                Name
+            </span>
+        </div>
+        <input type="text" placeholder="Firstname" class="form-control" />
+        <input type="text" placeholder="Lastname" class="form-control" />
+    </div>
+
+    <!--Button add ons-->
+    <div class="input-group">
+        <input type="text" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary">Search</button>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
