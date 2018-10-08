@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Popovers</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="d-flex" style="height:300px">
+            <div class="m-5">
+                <button class="btn btn-primary" data-toggle="popover" datat-placement="right" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, excepturi!">Toggle
+                    Popover(Right)</button>
+            </div>
+            <div class="m-5">
+                <button class="btn btn-info" data-toggle="popover" datat-placement="bottom" data-container="body"
+                    data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, excepturi!">Toggle
+                    Popover(Bottom)</button>
+            </div>
+            <div class="m-5">
+                <button class="btn btn-warning" data-toggle="popover" datat-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, excepturi!">Toggle
+                    Popover(Left)</button>
+            </div>
+            <div class="m-5">
+                <!-- Dismissable Popover i.e if click somewhere else, it disappears -->
+                <button id="popoverops" class="btn btn-danger" data-toggle="popover" data-trigger="focus"
+                    data-placement="top" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, excepturi!">Toggle
+                    Popover(Top)</button>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="mr-2">
+                <button class="btn btn-secondary" onclick="showPopover()">Show Popover</button>
+            </div>
+            <div class="mr-2">
+                <button class="btn btn-secondary" onclick="hidePopover()">Hide Popover</button>
+            </div>
+            <div class="mr-2">
+                <button class="btn btn-secondary" onclick="togglePopover()">Toggle Popover</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        $('[data-toggle="popover"]').popover();
+
+        function showPopover() {
+            $("#popoverops").popover('show');
+        }
+        function hidePopover() {
+            $("#popoverops").popover('hide');
+        }
+        function togglePopover() {
+            $("#popoverops").popover('toggle');
+        }
+        // Popover Events
+        // just before popover shown and before shown event
+        $("#popoverops").on('show.bs.popover', function (e) {
+            console.log("Popover show");
+            console.log(e);
+        })
+        // just before popover shown and after show event
+        $("#popoverops").on('shown.bs.popover', function (e) {
+            console.log("Popover shown");
+            console.log(e);
+        })
+        $("#popoverops").on('hide.bs.popover', function (e) {
+            console.log("Popover hide");
+            console.log(e);
+        })
+        $("#popoverops").on('hidden.bs.popover', function (e) {
+            console.log("Popover hidden");
+            console.log(e);
+        })
+    </script>
+</body>
+
+</html>

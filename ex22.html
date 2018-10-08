@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Tooltips</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Tooltip -->
+        <div class="container pt-6">
+            <!-- Tooltip will not work till not initialized in jquery -->
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Content Inside Tooltip(top)">Tooltip
+                on Top</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Content Inside Tooltip(right)">Tooltip
+                on Right</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Content Inside Tooltip(bottom)">Tooltip
+                on Bottom</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Content Inside Tooltip(left)">Tooltip
+                on Left</button>
+            <br>
+            <br>
+            <button class="btn btn-primary" id="tooltipop" data-toggle="tooltip" data-html="true" data-placement="left"
+                title="<h3>Content Inside Tooltip(left)</h3><p>Here is a para</p>">Tooltip
+                on Left</button>
+            <br />
+            <br>
+            <br>
+            <br>
+            <div>
+                <button class="btn btn-secondary" onclick="showTooltip()">Show Tooltip</button>
+                <button class="btn btn-secondary" onclick="hideTooltip()">Hide Tooltip</button>
+                <button class="btn btn-secondary" onclick="toggleTooltip()">Toggle Tooltip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+
+        function showTooltip() {
+            $("#tooltipop").tooltip('show');
+        }
+        function hideTooltip() {
+            $("#tooltipop").tooltip('hide');
+        }
+        function toggleTooltip() {
+            $("#tooltipop").tooltip('toggle');
+        }
+        // Tooltip Events
+        // work for both click and hover 
+        // just before tooltip shown and before shown event
+        $("#tooltipop").on('show.bs.tooltip', function (e) {
+            console.log("Tooltip show");
+            console.log(e);
+        });
+        // just before tooltip shown and after show event
+        $("#tooltipop").on('shown.bs.tooltip', function (e) {
+            console.log("Tooltip shown");
+            console.log(e);
+        });
+        // As tooltip hide
+        $("#tooltipop").on('hide.bs.tooltip', function (e) {
+            console.log("Tooltip hide");
+            console.log(e);
+        });
+        $("#tooltipop").on('hidden.bs.tooltip', function (e) {
+            console.log("Tooltip hidden");
+            console.log(e);
+        });
+    </script>
+
+</body>
+
+</html>
