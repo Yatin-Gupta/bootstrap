@@ -18,6 +18,7 @@
 
         .item-hl {
             border: 1px solid #333;
+            /* height: 80px; */
         }
     </style>
 
@@ -27,10 +28,145 @@
 <body>
     <div class="container">
         <!-- Flex Rows and Items -->
-        <div class="d-flex row-h1">
-            <div class="p-4 item-h1"></div>
-            <div class="p-4 item-h1"></div>
-            <div class="p-4 item-h1"></div>
+        <div class="row-hl d-flex border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <!-- Flex Rows reverse order -->
+        <div class="row-hl d-flex flex-row-reverse border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!-- Justify Content Left -->
+        <br>
+        <br>
+        <div class="row-hl d-flex justify-content-start border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!-- Justify Content Center-->
+        <br>
+        <br>
+        <div class="row-hl d-flex justify-content-center border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!-- Justify Content Right-->
+        <br>
+        <br>
+        <div class="row-hl d-flex justify-content-end border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  Justify Content Space Around Divs -->
+        <br>
+        <br>
+        <div class="row-hl d-flex justify-content-around border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  Justify Content Space Between Divs -->
+        <br>
+        <br>
+        <div class="row-hl d-flex justify-content-between border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  To align flex divs not vertically but horizontally row wise so that 
+            each div must act as seperate column
+        -->
+        <br>
+        <br>
+        <div class="row-hl d-flex flex-column border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+
+        <!--  To align flex divs not vertically but horizontally row wise so that 
+            each div must act as seperate column(Flex Column Reverse)
+        -->
+        <br>
+        <br>
+        <div class="row-hl d-flex flex-column-reverse border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+
+        <!--  To align flex divs vertically (on top) 
+            As noted in alignation flex box not stretch itself to entire div.
+            To do so you need to 
+            add seperately a class
+            align-items-stretch
+        -->
+
+        <br>
+        <br>
+        <div class="row-hl d-flex align-items-start border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  To align flex divs vertically (on center) 
+        -->
+
+        <br>
+        <br>
+        <div class="row-hl d-flex align-items-center border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  To align flex divs vertically (on end) 
+        -->
+
+        <br>
+        <br>
+        <div class="row-hl d-flex align-items-end border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  To align flex divs vertically (on baseline) 
+        -->
+
+        <br>
+        <br>
+        <div class="row-hl d-flex align-items-baseline border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <!--  To align flex divs vertically (on baseline) with align-items-strectch 
+            to stretch divs to take entire parent height in case of d-flex only and if
+            it is flex-column* then it must take entire width of parent div. 
+        -->
+
+        <br>
+        <br>
+        <div class="row-hl d-flex align-items-baseline align-items-stretch border border-dark">
+            <div class="p-4 item-hl">Flex Item 1</div>
+            <div class="p-4 item-hl">Flex Item 2</div>
+            <div class="p-4 item-hl">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <div class="d-flex row-hl">
+            <div class="align-self-start p-4 item-hl">Flex Item 1</div>
+            <div class="align-self-center p-4 item-hl">Flex Item 2</div>
+            <div class="align-self-end p-4 item-hl">Flex Item 3</div>
+            <div class="align-self-baseline p-4 item-hl">Flex Item 4</div>
+            <div class="align-self-stretch p-4 item-hl">Flex Item 5</div>
         </div>
     </div>
 

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Carousel Slider!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <!-- Simple Carousel -->
+                <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://source.unsplash.com/user/erondu/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/collection/190727/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/WLUHO9A_xik/700x400" class="d-block img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <!-- Adding Controls to Simple Carousel -->
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://source.unsplash.com/user/erondu/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/collection/190727/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/WLUHO9A_xik/700x400" class="d-block img-fluid">
+                        </div>
+                        <!-- Adding Controls here -->
+                        <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider2" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <!-- Adding Controls and Indicator to Simple Carousel -->
+                <div id="slider3" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider3" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider3" data-slide-to="1"></li>
+                        <li data-target="#slider3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://source.unsplash.com/user/erondu/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/collection/190727/700x400" alt="" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/WLUHO9A_xik/700x400" class="d-block img-fluid">
+                        </div>
+                        <!-- Adding Controls here -->
+                        <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider3" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <!-- Adding Controls, Indicator and caption to Simple Carousel -->
+                <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider4" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider4" data-slide-to="1"></li>
+                        <li data-target="#slider4" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://source.unsplash.com/user/erondu/700x400" alt="" class="d-block img-fluid">
+                            <!-- Purpose of hiding caption is that we don't want to show it on small screens,
+                                instead we want to shown them on medium sizes screens
+                            -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Slider One</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, itaque.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/collection/190727/700x400" alt="" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Slider Two</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, itaque.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://source.unsplash.com/WLUHO9A_xik/700x400" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Slider Three</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, itaque.</p>
+                            </div>
+                        </div>
+                        <!-- Adding Controls here -->
+                        <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#slider4" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Slider -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $('.carousel').carousel({
+            interval: 1000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true // it is true by default. It means as image goes to last, it automatically comes to first or next control takes you to first image when you click next from last image
+        });
+        // slide.bs.carousel is built in event associated with carousel
+        // This events happen when slide takesoff to another slide
+        $("#slider4").on('slide.bs.carousel', function (e) {
+            console.log("SLIDER 4 SLIDES WITH EVENT AS!");
+            console.log(e);
+        });
+        // This events happen when slide stops at another slide, thus slid always happen after slide
+        $("#slider4").on('slid.bs.carousel', function (e) {
+            console.log("SLIDER 4 SLIDE WITH EVENT AS!");
+            console.log(e);
+        });
+    </script>
+</body>
+
+</html>

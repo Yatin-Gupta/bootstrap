@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <style>
+        .row-hl {
+            background: #f4f4f4;
+            height: 250px;
+        }
+
+        .item-hl {
+            border: 1px solid #333;
+            /* height: 80px; */
+        }
+    </style>
+
+    <title>Auto Margins And Wrapping</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- mr-auto assign right side margin as much possible for that div -->
+        <div class="d-flex row-hl border border-dark">
+            <div class="p-2 item-hl mr-auto">Flex Item 1</div>
+            <div class="p-2 item-hl">Flex Item 2</div>
+            <div class="p-2 item-hl">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <!-- ml-auto assign right side margin as much possible for that div -->
+        <div class="d-flex row-hl border border-dark">
+            <div class="p-2 item-hl">Flex Item 1</div>
+            <div class="p-2 item-hl">Flex Item 2</div>
+            <div class="p-2 item-hl ml-auto">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <!-- mb-auto assign bottom side margin as much possible for that div -->
+        <div class="d-flex flex-column row-hl border border-dark">
+            <div class="p-2 item-hl mb-auto">Flex Item 1</div>
+            <div class="p-2 item-hl">Flex Item 2</div>
+            <!-- Here note that ml-auto let this div to take only 
+                that much width that it needs, and remaining for all left
+                it set margin
+            -->
+            <div class="p-2 item-hl ml-auto">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <!-- mt-auto assign top side margin as much possible for that div -->
+        <div class="d-flex flex-column row-hl border border-dark">
+            <div class="p-2 item-hl">Flex Item 1</div>
+            <div class="p-2 item-hl">Flex Item 2</div>
+            <div class="p-2 item-hl mt-auto">Flex Item 3</div>
+        </div>
+        <br>
+        <br>
+        <!-- No Wrap(It is by default, still class for it is flex-nowrap) 
+            In nowrap Effective width of divs reduces
+            till possible and after that flex box overflow from divs
+            In wrap divs come to next line
+        -->
+        <div class="d-flex flex-nowrap row-hl">
+            <div class="item-hl p-2">Flex Item 1</div>
+            <div class="item-hl p-2">Flex Item 2</div>
+            <div class="item-hl p-2">Flex Item 3</div>
+            <div class="item-hl p-2">Flex Item 4</div>
+            <div class="item-hl p-2">Flex Item 5</div>
+            <div class="item-hl p-2">Flex Item 6</div>
+            <div class="item-hl p-2">Flex Item 7</div>
+            <div class="item-hl p-2">Flex Item 8</div>
+            <div class="item-hl p-2">Flex Item 9</div>
+            <div class="item-hl p-2">Flex Item 10</div>
+            <div class="item-hl p-2">Flex Item 11</div>
+            <div class="item-hl p-2">Flex Item 12</div>
+            <div class="item-hl p-2">Flex Item 13</div>
+            <div class="item-hl p-2">Flex Item 14</div>
+            <div class="item-hl p-2">Flex Item 15</div>
+        </div>
+        <br>
+        <br>
+        <!-- No Wrap(It is by default, still class for it is flex-nowrap) 
+            In nowrap Effective width of divs reduces
+            till possible and after that flex box overflow from divs
+            In wrap divs come to next line
+        -->
+        <div class="d-flex flex-wrap row-hl">
+            <div class="item-hl p-2">Flex Item 1</div>
+            <div class="item-hl p-2">Flex Item 2</div>
+            <div class="item-hl p-2">Flex Item 3</div>
+            <div class="item-hl p-2">Flex Item 4</div>
+            <div class="item-hl p-2">Flex Item 5</div>
+            <div class="item-hl p-2">Flex Item 6</div>
+            <div class="item-hl p-2">Flex Item 7</div>
+            <div class="item-hl p-2">Flex Item 8</div>
+            <div class="item-hl p-2">Flex Item 9</div>
+            <div class="item-hl p-2">Flex Item 10</div>
+            <div class="item-hl p-2">Flex Item 11</div>
+            <div class="item-hl p-2">Flex Item 12</div>
+            <div class="item-hl p-2">Flex Item 13</div>
+            <div class="item-hl p-2">Flex Item 14</div>
+            <div class="item-hl p-2">Flex Item 15</div>
+        </div>
+        <br>
+        <br>
+        <!-- Ordering -->
+        <div class="d-flex row-hl border border-dark">
+            <div class="order-3 p-2 item-hl mr-auto">Flex Item 1</div>
+            <div class="order-2 p-2 item-hl">Flex Item 2</div>
+            <div class="order-1 p-2 item-hl">Flex Item 3</div>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
